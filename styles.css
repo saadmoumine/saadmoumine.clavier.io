@@ -1,0 +1,94 @@
+body {
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    margin: 0;
+}
+
+.keyboard-container {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.keyboard-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.keyboard button {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    padding: 5px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.keyboard button img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.keyboard {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 5px;
+}
+
+.textarea-container {
+    width: calc(100% - 50px);
+    position: relative;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    resize: none; /* Make textarea not resizable */
+    padding: .5rem;
+    font-size: 1.2rem;
+    outline: none;
+    border: 2px solid rgb(104, 104, 255);
+    border-radius: .5rem;
+}
+
+#delete, #space, #toggleCase, #enter {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#delete img, #space img, #toggleCase img, #enter img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#delete {
+    margin-left: auto;
+}
+
+#toggleCase {
+    margin-left: auto;
+}
+
+#space {
+    grid-column: span 5;
+}
+
+#enter {
+    grid-column: span 5;
+}
